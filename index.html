@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Econômico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo Econômico Simples</h1>
+
+        <!-- Área de Compra de Itens -->
+        <div class="buy-items">
+            <h2>Comprar Itens</h2>
+            <button onclick="comprarItem(20, 'Item 1')">Comprar maça (20)</button>
+            <button onclick="comprarItem(50, 'Item 2')">Comprar Banana 2 (50)</button>
+            <button onclick="comprarItem(100, 'Item 3')">Comprar Arroz 3 (100)</button>
+        </div>
+
+        <!-- Área de Visualização do Inventário -->
+        <div class="inventory">
+            <h2>Inventário</h2>
+            <ul id="inventoryList">
+                <!-- Aqui serão listados os itens do inventário -->
+            </ul>
+        </div>
+
+        <!-- Estatísticas -->
+        <div class="stats">
+            <p>Dinheiro: <span id="money">0</span></p>
+            <p>Tempo até próximo trabalho: <span id="timer">5:00</span></p>
+        </div>
+        
+        <!-- Botão de Trabalhar -->
+        <div class="actions">
+            <button onclick="trabalhar()">Trabalhar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
